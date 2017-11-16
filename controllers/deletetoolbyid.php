@@ -17,7 +17,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $jsondata = curl_exec($ch);
 $theDeletedTool = json_decode($jsondata,true);
 
-if ($theDeletedTook == null){
+if ($theDeletedTool == null){
     $toolArray = false;
 }else{
         $toolArray = array($theDeletedTool);
